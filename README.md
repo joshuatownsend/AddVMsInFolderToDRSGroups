@@ -21,7 +21,8 @@ Usage:
 	2. Create affinity or antiaffinity rules per design.
 	3. Update vCenterServer variable then run manually to save credentials.  
 	4. Call from scheduled task like string below for ongoing use:
-C:\WINDOWS\system32\windowspowershell\v1.0\powershell.exe “& ‘C:\DRSGroupAutomation\AddVMsInFolderToDRSGroup.ps1′”
+		Command: C:\WINDOWS\system32\windowspowershell\v1.0\powershell.exe 
+		Arguments: -PSConsoleFile "%ProgramFiles(x86)%\VMware\Infrastructure\vSphere PowerCLI\vim.psc1" -File "C:\DRSGroupAutomation\AddVMsInFolderToDRSGroup.ps1"
 		Note: Schedule at >5min intervals to give DRS time to run.
 
 Note: This will remove/replace all existing DRS Group members with VMs in
